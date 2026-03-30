@@ -63,7 +63,7 @@ export default function ProfileStep({
                 ? handleFirstNameChange(e.target.value)
                 : handleLastNameChange(e.target.value)
             }
-            className="placeholder:text-[#D9E0E6] placeholder:text-xs w-[85%]"
+            className="placeholder:text-[#D9E0E6] placeholder:text-xs md:w-[85%]"
           />
         </div>
       ))}

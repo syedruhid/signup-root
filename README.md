@@ -46,3 +46,11 @@ Added Proper regex wherever required, Last Name is Optional and if first Name is
 Typography component defined for similar typography norms to be fdollowed throughout the application to maintain discplined and unifrom UI/UX.
 Components seperated to maintain the same.
 
+Framer-motion animations added to help with visual continuity in such high intent process while reducing a user's cognitive complexity/ perceivance on the flow.
+
+The animations and progressbar are controlled by the central currentStep state. This will help in testing and also the ui state more deterministic, Further more if required same can be moved to a redux state by including rtx if the flow becomes more complex and need of network requests is included.
+
+Didnt use redux for the assessment and only custom hook (useSignupFlow) to help keep the logic coupled with the UI, will help in porting this feature to anywehre required and any redux/zustand can be easily integrated.
+
+Single Continue and Back button because Step Components (e.g., MobileNoStep) will only handle colllecting and validating data.
+LoginContainer cares about Flow and Layout. It manages the overall state, the progress bar, and the navigation triggers. this helps in reducing navigation issues while actually keeping a single page in single flow but multi page process

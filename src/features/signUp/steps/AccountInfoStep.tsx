@@ -43,7 +43,7 @@ function AccountInfoStep({ accountType, onAccountTypeChange, setStepStateFor, st
               type="button"
               onClick={() => handleChange(opt.value)}
               className={cn(
-                'flex items-center gap-4 w-[85%] p-4 rounded-2xl border-1 text-left transition-all cursor-pointer shadow-[0px_4px_8px_0px_#BCCBDB4D]',
+                'flex items-center gap-4 md:w-[85%] p-4 rounded-2xl border-1 text-left transition-all cursor-pointer shadow-[0px_4px_8px_0px_#BCCBDB4D]',
                 selected ? 'border-[#0054FD]' : 'border-[#D9E0E6] hover:border-[#0054FD]',
               )}
             >

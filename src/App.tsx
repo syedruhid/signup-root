@@ -104,7 +104,7 @@ function App() {
   }
 
   return (
-    <div className="flex min-h-[100dvh] md:flex-row flex-col bg-[#f5f5f7] p-4">
+    <div id="drawer-container" className="flex min-h-[100dvh] md:flex-row flex-col bg-[#f5f5f7] p-4">
       <div className="mx-auto my-8 flex min-h-0 min-w-0 w-full max-w-[min(100%,1320px)] flex-1 flex-col gap-8 md:my-12 md:flex-row md:items-stretch md:justify-between md:gap-0">
         <div className="flex flex-col justify-between shrink-1 flex-1">
           <OnboardingHeader />

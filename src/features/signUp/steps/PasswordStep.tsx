@@ -88,7 +88,7 @@ export default function PasswordStep({
   };
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 mb-2">
       <Typography
         variant="h3"
         fontVariant="primary"
@@ -111,7 +111,7 @@ export default function PasswordStep({
             onChange={(e) => field.onChange(e.target.value)}
             className="placeholder:text-[#D9E0E6] placeholder:text-xs"
             wrapperClassName={cn(
-              'w-[85%]',
+              'md:w-[85%]',
               field.key === PASSWORD_INPUT_TYPE.CONFIRM_PASSWORD &&
                 confirmPassword.length > 0 &&
                 confirmPasswordError.length > 0 &&
@@ -135,7 +135,7 @@ export default function PasswordStep({
               </button>
             }
           />
-          <Typography variant="small" className="pl-1 text-[#8292A1] w-[80%]">
+          <Typography variant="small" className="pl-1 text-[#8292A1] md:w-[80%]">
             {field.bottomText}
           </Typography>
         </div>
